@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B82A91E31F8E0D1400927B65 /* libDHxlsReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86623FE1F8E09650034BC4F /* libDHxlsReader.a */; };
+		B82A91E51F8E0DDF00927B65 /* shici.xls in Resources */ = {isa = PBXBuildFile; fileRef = B82A91E41F8E0D7200927B65 /* shici.xls */; };
+		B86623F91F8E07FC0034BC4F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B86623F81F8E07FC0034BC4F /* libiconv.tbd */; };
+		B86624021F8E09650034BC4F /* DHxlsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B86624011F8E09650034BC4F /* DHxlsReader.m */; };
+		B866240A1F8E098D0034BC4F /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = B86624071F8E098D0034BC4F /* DHcell.m */; };
+		B866244E1F8E0AE30034BC4F /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = B86624461F8E0ADB0034BC4F /* endian.c */; };
+		B866244F1F8E0AE30034BC4F /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = B86624471F8E0ADB0034BC4F /* getopt.c */; };
+		B86624501F8E0AE30034BC4F /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = B866244A1F8E0ADB0034BC4F /* ole.c */; };
+		B86624511F8E0AE30034BC4F /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = B866244B1F8E0ADB0034BC4F /* xls.c */; };
+		B86624521F8E0AE30034BC4F /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = B866244C1F8E0ADB0034BC4F /* xls2csv.c */; };
+		B86624531F8E0AE30034BC4F /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = B866244D1F8E0ADB0034BC4F /* xlstool.c */; };
+		B86624581F8E0C120034BC4F /* brdb.c.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624391F8E0ADB0034BC4F /* brdb.c.h */; };
+		B86624591F8E0C120034BC4F /* brdb.h in Headers */ = {isa = PBXBuildFile; fileRef = B866243A1F8E0ADB0034BC4F /* brdb.h */; };
+		B866245A1F8E0C120034BC4F /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = B866243B1F8E0ADB0034BC4F /* endian.h */; };
+		B866245B1F8E0C120034BC4F /* ole.h in Headers */ = {isa = PBXBuildFile; fileRef = B866243E1F8E0ADB0034BC4F /* ole.h */; };
+		B866245C1F8E0C120034BC4F /* xls.h in Headers */ = {isa = PBXBuildFile; fileRef = B866243F1F8E0ADB0034BC4F /* xls.h */; };
+		B866245D1F8E0C120034BC4F /* xlsstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624401F8E0ADB0034BC4F /* xlsstruct.h */; };
+		B866245E1F8E0C120034BC4F /* xlstool.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624411F8E0ADB0034BC4F /* xlstool.h */; };
+		B866245F1F8E0C120034BC4F /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624421F8E0ADB0034BC4F /* xlstypes.h */; };
+		B86624601F8E0C120034BC4F /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624281F8E09BB0034BC4F /* config.h */; };
+		B86624611F8E0C120034BC4F /* DHcell.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624081F8E098D0034BC4F /* DHcell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B86624621F8E0C120034BC4F /* DHxlsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = B86624001F8E09650034BC4F /* DHxlsReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D0C9AE1F8E001500CA6764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D0C9AD1F8E001500CA6764 /* AppDelegate.m */; };
+		B8D0C9B11F8E001500CA6764 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D0C9B01F8E001500CA6764 /* ViewController.m */; };
+		B8D0C9B41F8E001500CA6764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D0C9B21F8E001500CA6764 /* Main.storyboard */; };
+		B8D0C9B61F8E001500CA6764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D0C9B51F8E001500CA6764 /* Assets.xcassets */; };
+		B8D0C9B91F8E001500CA6764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D0C9B71F8E001500CA6764 /* LaunchScreen.storyboard */; };
+		B8D0C9BC1F8E001500CA6764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D0C9BB1F8E001500CA6764 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B86624541F8E0B430034BC4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8D0C9A11F8E001500CA6764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B86623FD1F8E09650034BC4F;
+			remoteInfo = DHxlsReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B82A91E41F8E0D7200927B65 /* shici.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = shici.xls; sourceTree = "<group>"; };
+		B86623F81F8E07FC0034BC4F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		B86623FE1F8E09650034BC4F /* libDHxlsReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDHxlsReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86624001F8E09650034BC4F /* DHxlsReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHxlsReader.h; sourceTree = "<group>"; };
+		B86624011F8E09650034BC4F /* DHxlsReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHxlsReader.m; sourceTree = "<group>"; };
+		B86624071F8E098D0034BC4F /* DHcell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
+		B86624081F8E098D0034BC4F /* DHcell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
+		B86624091F8E098D0034BC4F /* DHcell-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
+		B86624281F8E09BB0034BC4F /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B86624331F8E0ADB0034BC4F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B86624341F8E0ADB0034BC4F /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B86624351F8E0ADB0034BC4F /* XlsReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
+		B86624361F8E0ADB0034BC4F /* XlsReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
+		B86624391F8E0ADB0034BC4F /* brdb.c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		B866243A1F8E0ADB0034BC4F /* brdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		B866243B1F8E0ADB0034BC4F /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		B866243C1F8E0ADB0034BC4F /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		B866243D1F8E0ADB0034BC4F /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		B866243E1F8E0ADB0034BC4F /* ole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		B866243F1F8E0ADB0034BC4F /* xls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		B86624401F8E0ADB0034BC4F /* xlsstruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		B86624411F8E0ADB0034BC4F /* xlstool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		B86624421F8E0ADB0034BC4F /* xlstypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		B86624431F8E0ADB0034BC4F /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		B86624441F8E0ADB0034BC4F /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		B86624461F8E0ADB0034BC4F /* endian.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = endian.c; sourceTree = "<group>"; };
+		B86624471F8E0ADB0034BC4F /* getopt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		B86624481F8E0ADB0034BC4F /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		B86624491F8E0ADB0034BC4F /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		B866244A1F8E0ADB0034BC4F /* ole.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		B866244B1F8E0ADB0034BC4F /* xls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		B866244C1F8E0ADB0034BC4F /* xls2csv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		B866244D1F8E0ADB0034BC4F /* xlstool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		B8D0C9A91F8E001500CA6764 /* Excel2JSON-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Excel2JSON-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D0C9AC1F8E001500CA6764 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8D0C9AD1F8E001500CA6764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8D0C9AF1F8E001500CA6764 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B8D0C9B01F8E001500CA6764 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8D0C9B31F8E001500CA6764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8D0C9B51F8E001500CA6764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8D0C9B81F8E001500CA6764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8D0C9BA1F8E001500CA6764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D0C9BB1F8E001500CA6764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B86623FB1F8E09650034BC4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D0C9A61F8E001500CA6764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86623F91F8E07FC0034BC4F /* libiconv.tbd in Frameworks */,
+				B82A91E31F8E0D1400927B65 /* libDHxlsReader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B86623F71F8E07FC0034BC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B86623F81F8E07FC0034BC4F /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86623FF1F8E09650034BC4F /* DHxlsReader */ = {
+			isa = PBXGroup;
+			children = (
+				B86624311F8E0ADB0034BC4F /* libxls */,
+				B86624281F8E09BB0034BC4F /* config.h */,
+				B86624091F8E098D0034BC4F /* DHcell-Private.h */,
+				B86624081F8E098D0034BC4F /* DHcell.h */,
+				B86624071F8E098D0034BC4F /* DHcell.m */,
+				B86624001F8E09650034BC4F /* DHxlsReader.h */,
+				B86624011F8E09650034BC4F /* DHxlsReader.m */,
+			);
+			path = DHxlsReader;
+			sourceTree = "<group>";
+		};
+		B86624311F8E0ADB0034BC4F /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				B86624321F8E0ADB0034BC4F /* cplusplus */,
+				B86624371F8E0ADB0034BC4F /* include */,
+				B86624451F8E0ADB0034BC4F /* src */,
+			);
+			path = libxls;
+			sourceTree = SOURCE_ROOT;
+		};
+		B86624321F8E0ADB0034BC4F /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				B86624331F8E0ADB0034BC4F /* main.cpp */,
+				B86624341F8E0ADB0034BC4F /* Makefile */,
+				B86624351F8E0ADB0034BC4F /* XlsReader.cpp */,
+				B86624361F8E0ADB0034BC4F /* XlsReader.h */,
+			);
+			path = cplusplus;
+			sourceTree = "<group>";
+		};
+		B86624371F8E0ADB0034BC4F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B86624381F8E0ADB0034BC4F /* libxls */,
+				B86624431F8E0ADB0034BC4F /* Makefile.am */,
+				B86624441F8E0ADB0034BC4F /* Makefile.in */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B86624381F8E0ADB0034BC4F /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				B86624391F8E0ADB0034BC4F /* brdb.c.h */,
+				B866243A1F8E0ADB0034BC4F /* brdb.h */,
+				B866243B1F8E0ADB0034BC4F /* endian.h */,
+				B866243C1F8E0ADB0034BC4F /* Makefile.am */,
+				B866243D1F8E0ADB0034BC4F /* Makefile.in */,
+				B866243E1F8E0ADB0034BC4F /* ole.h */,
+				B866243F1F8E0ADB0034BC4F /* xls.h */,
+				B86624401F8E0ADB0034BC4F /* xlsstruct.h */,
+				B86624411F8E0ADB0034BC4F /* xlstool.h */,
+				B86624421F8E0ADB0034BC4F /* xlstypes.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		B86624451F8E0ADB0034BC4F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B86624461F8E0ADB0034BC4F /* endian.c */,
+				B86624471F8E0ADB0034BC4F /* getopt.c */,
+				B86624481F8E0ADB0034BC4F /* Makefile.am */,
+				B86624491F8E0ADB0034BC4F /* Makefile.in */,
+				B866244A1F8E0ADB0034BC4F /* ole.c */,
+				B866244B1F8E0ADB0034BC4F /* xls.c */,
+				B866244C1F8E0ADB0034BC4F /* xls2csv.c */,
+				B866244D1F8E0ADB0034BC4F /* xlstool.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B8D0C9A01F8E001500CA6764 = {
+			isa = PBXGroup;
+			children = (
+				B8D0C9AB1F8E001500CA6764 /* Excel2JSON-Demo */,
+				B86623FF1F8E09650034BC4F /* DHxlsReader */,
+				B8D0C9AA1F8E001500CA6764 /* Products */,
+				B86623F71F8E07FC0034BC4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8D0C9AA1F8E001500CA6764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8D0C9A91F8E001500CA6764 /* Excel2JSON-Demo.app */,
+				B86623FE1F8E09650034BC4F /* libDHxlsReader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8D0C9AB1F8E001500CA6764 /* Excel2JSON-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B82A91E41F8E0D7200927B65 /* shici.xls */,
+				B8D0C9AC1F8E001500CA6764 /* AppDelegate.h */,
+				B8D0C9AD1F8E001500CA6764 /* AppDelegate.m */,
+				B8D0C9AF1F8E001500CA6764 /* ViewController.h */,
+				B8D0C9B01F8E001500CA6764 /* ViewController.m */,
+				B8D0C9B21F8E001500CA6764 /* Main.storyboard */,
+				B8D0C9B51F8E001500CA6764 /* Assets.xcassets */,
+				B8D0C9B71F8E001500CA6764 /* LaunchScreen.storyboard */,
+				B8D0C9BA1F8E001500CA6764 /* Info.plist */,
+				B8D0C9BB1F8E001500CA6764 /* main.m */,
+			);
+			path = "Excel2JSON-Demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B86624571F8E0BEE0034BC4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86624611F8E0C120034BC4F /* DHcell.h in Headers */,
+				B86624621F8E0C120034BC4F /* DHxlsReader.h in Headers */,
+				B86624581F8E0C120034BC4F /* brdb.c.h in Headers */,
+				B86624591F8E0C120034BC4F /* brdb.h in Headers */,
+				B866245A1F8E0C120034BC4F /* endian.h in Headers */,
+				B866245B1F8E0C120034BC4F /* ole.h in Headers */,
+				B866245C1F8E0C120034BC4F /* xls.h in Headers */,
+				B866245D1F8E0C120034BC4F /* xlsstruct.h in Headers */,
+				B866245E1F8E0C120034BC4F /* xlstool.h in Headers */,
+				B866245F1F8E0C120034BC4F /* xlstypes.h in Headers */,
+				B86624601F8E0C120034BC4F /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B86623FD1F8E09650034BC4F /* DHxlsReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B86624041F8E09650034BC4F /* Build configuration list for PBXNativeTarget "DHxlsReader" */;
+			buildPhases = (
+				B86623FA1F8E09650034BC4F /* Sources */,
+				B86623FB1F8E09650034BC4F /* Frameworks */,
+				B86624571F8E0BEE0034BC4F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHxlsReader;
+			productName = DHxlsReader;
+			productReference = B86623FE1F8E09650034BC4F /* libDHxlsReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B8D0C9A81F8E001500CA6764 /* Excel2JSON-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8D0C9BF1F8E001500CA6764 /* Build configuration list for PBXNativeTarget "Excel2JSON-Demo" */;
+			buildPhases = (
+				B8D0C9A51F8E001500CA6764 /* Sources */,
+				B8D0C9A61F8E001500CA6764 /* Frameworks */,
+				B8D0C9A71F8E001500CA6764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B86624551F8E0B430034BC4F /* PBXTargetDependency */,
+			);
+			name = "Excel2JSON-Demo";
+			productName = "Excel2JSON-Demo";
+			productReference = B8D0C9A91F8E001500CA6764 /* Excel2JSON-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8D0C9A11F8E001500CA6764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Jakey;
+				TargetAttributes = {
+					B86623FD1F8E09650034BC4F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					B8D0C9A81F8E001500CA6764 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B8D0C9A41F8E001500CA6764 /* Build configuration list for PBXProject "Excel2JSON-Demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8D0C9A01F8E001500CA6764;
+			productRefGroup = B8D0C9AA1F8E001500CA6764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8D0C9A81F8E001500CA6764 /* Excel2JSON-Demo */,
+				B86623FD1F8E09650034BC4F /* DHxlsReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8D0C9A71F8E001500CA6764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D0C9B91F8E001500CA6764 /* LaunchScreen.storyboard in Resources */,
+				B8D0C9B61F8E001500CA6764 /* Assets.xcassets in Resources */,
+				B82A91E51F8E0DDF00927B65 /* shici.xls in Resources */,
+				B8D0C9B41F8E001500CA6764 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B86623FA1F8E09650034BC4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86624501F8E0AE30034BC4F /* ole.c in Sources */,
+				B866244F1F8E0AE30034BC4F /* getopt.c in Sources */,
+				B86624021F8E09650034BC4F /* DHxlsReader.m in Sources */,
+				B86624521F8E0AE30034BC4F /* xls2csv.c in Sources */,
+				B86624511F8E0AE30034BC4F /* xls.c in Sources */,
+				B866244E1F8E0AE30034BC4F /* endian.c in Sources */,
+				B866240A1F8E098D0034BC4F /* DHcell.m in Sources */,
+				B86624531F8E0AE30034BC4F /* xlstool.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D0C9A51F8E001500CA6764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D0C9B11F8E001500CA6764 /* ViewController.m in Sources */,
+				B8D0C9BC1F8E001500CA6764 /* main.m in Sources */,
+				B8D0C9AE1F8E001500CA6764 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B86624551F8E0B430034BC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B86623FD1F8E09650034BC4F /* DHxlsReader */;
+			targetProxy = B86624541F8E0B430034BC4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8D0C9B21F8E001500CA6764 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8D0C9B31F8E001500CA6764 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8D0C9B71F8E001500CA6764 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8D0C9B81F8E001500CA6764 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B86624051F8E09650034BC4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					./libxls,
+					./libxls/include,
+					./libxls/include/libxls,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-llibiconv\n",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B86624061F8E09650034BC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					./libxls,
+					./libxls/include,
+					./libxls/include/libxls,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-llibiconv\n",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8D0C9BD1F8E001500CA6764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B8D0C9BE1F8E001500CA6764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8D0C9C01F8E001500CA6764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Excel2JSON-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.skyfox.Excel2JSON-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8D0C9C11F8E001500CA6764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Excel2JSON-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.skyfox.Excel2JSON-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B86624041F8E09650034BC4F /* Build configuration list for PBXNativeTarget "DHxlsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86624051F8E09650034BC4F /* Debug */,
+				B86624061F8E09650034BC4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D0C9A41F8E001500CA6764 /* Build configuration list for PBXProject "Excel2JSON-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D0C9BD1F8E001500CA6764 /* Debug */,
+				B8D0C9BE1F8E001500CA6764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D0C9BF1F8E001500CA6764 /* Build configuration list for PBXNativeTarget "Excel2JSON-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D0C9C01F8E001500CA6764 /* Debug */,
+				B8D0C9C11F8E001500CA6764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8D0C9A11F8E001500CA6764 /* Project object */;
+}
